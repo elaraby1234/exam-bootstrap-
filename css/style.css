@@ -1,0 +1,459 @@
+/*################### Global style ###################*/
+
+
+
+nav{
+  transition: all 0.5s;
+}
+.BackToTop{
+   right: 10px;
+   bottom: 10px;
+   width:30px ;
+   height: 30px;
+   padding: 10px;
+   display: none;
+   cursor: pointer;
+}
+.colorBox{
+  top: 20%;
+  left: 0px;
+  background-color: wheat;
+  z-index: 99999;
+  padding: 10px;
+}
+.colorBox span{
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+
+}
+body{
+    font-family: "Nunito Sans", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat", sans-serif;
+}
+:root{
+    --main-color: #e65f78;
+  --white-color: #fff;
+  --black-color: #000;
+  --btn-color: #eee;
+  --bg-light: #f8f9fa;
+  --blog-color: rgb(108, 107, 107);
+  --bg-section: #f5f5f5;
+}
+.main-color {
+    color: var(--main-color);
+  }
+  .bg-section{
+    background-color: var(--bg-section);
+  }
+  
+/*################### Global style ###################*/
+
+.navbar {
+  background-color: var(--white-color)
+}
+.navbar .navbar-brand {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 60px;
+  color: var(--black-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.navbar .nav-item .nav-link {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--black-color);
+  font-family: "Poppins", sans-serif;
+}
+.main-nav .navbar .nav-item .nav-link.active::after {
+  content: " ";
+  width: 80%;
+  height: 2px;
+  background-color: var(--black-color);
+  position: absolute;
+  bottom: 21%;
+  left: 10%;
+  transition: all 0.9s;
+}
+.main-nav .navbar .nav-link {
+  position: relative;
+  overflow: hidden;
+}
+.main-nav .navbar .nav-link::after {
+  content: " ";
+  width: 80%;
+  height: 2px;
+  background-color: var(--black-color);
+  position: absolute;
+  bottom: 21%;
+  left: -100%;
+  transition:all 0.9s;
+}
+
+/*#################### start section home ######################## */
+.home{
+    background-image: url(../imgs/imgs/bg.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+  
+}
+.home .layer{
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+   background-color: rgba(0, 0, 0, 0.6);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+  .hero-icons li {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    margin: 0 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-icons li a {
+    color: white;
+    font-size: 0.8rem;
+  
+  }
+/*#################### end section home ######################## */
+
+/*############################start section about##########################  */
+.about .main-img .dots{
+  background-image: url(../imgs/imgs/dots.png);
+	z-index: -1;
+	top: 50px;
+	left: -30px;
+	background-repeat: repeat;
+}
+.about .content h3{
+  font-weight: 800;
+  margin-top: 5px;
+}
+.about .content .sub-title{
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+ 
+}
+.about .content  span{
+  color: #999999;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 900;
+ 
+}
+
+/*############################End section about##########################  */
+
+
+.progress {
+	height: 25px;
+	box-shadow: 2px 2px 10px rgb(197, 197, 197) inset;
+}
+.btn-primary-color {
+	background-color: black;
+	color: white;
+}
+.btn-outline-primary-color {
+	border-color: black;
+}
+.btn-outline-primary-color:hover {
+	background-color: black;
+	color: white;
+}
+/* ########################services############################ */
+.services .main-title h3{
+  font-weight: 900;
+  font-size: 3rem;
+  position: relative;
+}
+.services .main-title h3::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  height: 2px;
+  width:160px;
+  transform: translateX(-50%);
+  background-image: url(../imgs/imgs/dots.png);
+}
+.services .container .card-body .icon i{
+   
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    background: #f4f4f4;
+    transition: all 0.5s;
+}
+.services .container .card:hover i{
+  background-color: black;
+	color: white;
+}
+
+/* ########################services############################ */
+
+
+/*######################## portfolio########################  */
+.portfolio .main-title h3{
+  font-weight: 900;
+  font-size: 3rem;
+  position: relative;
+}
+ .portfolio .main-title h3::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  height: 2px;
+  width:160px;
+  transform: translateX(-50%);
+  background-image: url(../imgs/imgs/dots.png);
+}
+
+.portfolio .nav .nav-item button{
+  color: #000;
+  font-weight: 900;
+  margin: 5px;
+}
+.icons{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  margin: 3px;
+}
+.portfolio-layer{
+  width: 95%;
+  height: 95%;
+  background-color: rgba(255, 255, 255, 0.993);
+  position: absolute;
+  transition: all 0.5s;
+  opacity: 0;
+}
+.picture:hover .portfolio-layer{
+  opacity: 1;
+}
+.picture .portfolio-layer .icons-portfolio {
+  width: 30px;
+  height: 30px;
+  line-height: 70px;
+  border-radius: 50%;
+  background:#000;
+  transition: all 0.5s;
+  color: var(--white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  margin: 3px;
+
+}
+.picture .portfolio-layer .icons-portfolio:hover{
+  background: var(--white-color);
+  border: 1px solid #343434;
+}
+ .icons-portfolio:hover i{
+  color: #343434;
+  
+ }
+/*##################### end portfolio##########################  */
+
+
+/* ########################## clients ################## */
+.clients .main-title h3{
+  font-weight: 900;
+  font-size: 3rem;
+  position: relative;
+}
+.clients .main-title h3::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  height: 2px;
+  width:160px;
+  transform: translateX(-50%);
+  background-image: url(../imgs/imgs/dots.png);
+}
+.carousel-inner img{
+  width: 100px;
+  height: 100px;
+  transform: translateY(50%);
+}
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #869791;
+}
+.carousel-inner h6{
+   font-size: 16px;
+    font-weight: 600;
+   
+}
+.carousel-inner span{
+  font-size: 12px;
+font-weight: 600;
+color: #888;
+
+}
+/*####################### clients#############################  */
+
+
+/* ###################### Blog ###################### */
+.blog .main-title h3{
+  font-weight: 900;
+  font-size: 3rem;
+  position: relative;
+}
+.blog .main-title h3::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  height: 2px;
+  width:160px;
+  transform: translateX(-50%);
+  background-image: url(../imgs/imgs/dots.png);
+}
+.img-text {
+  background-color: dimgrey;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+.img-text h4,h5{
+  font-weight: 800;
+}
+.blog p{
+  font-weight: 500;
+}
+
+.blog-layer{
+  width: 0;
+  height: 0%;
+  background-color: rgba(255, 255, 255, 0.993);
+  position: absolute;
+  transform: rotateY(180deg);
+  
+  transition: all 0.5s;
+  opacity: 0;
+}
+.blog .card img{
+  transition: all 1s;
+}
+
+.blog .card:hover .blog-layer{
+ width: 95%;
+ height: 95%;
+  opacity: 1;
+  transform:rotateY(0deg)
+  
+}
+.blog .card:hover img{
+  scale: 1.1;
+}
+.blog div{
+  overflow: hidden;
+}
+.icons{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+}
+.icons:hover{
+  background: var(--white-color);
+  border: 1px solid #343434;
+}
+ .icons:hover i{
+  color: var(--black-color);
+ }
+ /*####################### blog########################  */
+
+
+
+/*############################ contact #########################  */
+.contact .main-title h3{
+  font-weight: 900;
+  font-size: 3rem;
+  position: relative;
+}
+.contact .main-title h3::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  height: 2px;
+  width:160px;
+  transform: translateX(-50%);
+  background-image: url(../imgs/imgs/dots.png);
+}
+
+.contact .container .contact-card .icons-contact i{
+   width: 70px;
+   height: 70px;
+   line-height: 70px;
+   border-radius: 50%;
+   background: #f4f4f4;
+   transition: all 0.5s;
+}
+.contact .container .contact-card:hover i{
+  background-color: black;
+	color: white;
+  
+}
+textarea{
+  border-color: var(--bg-section);
+   resize: none;
+   border-radius: 10px;
+}
+.my-btn{
+  background-color: #343434;
+  color: white;
+  border-color: transparent;
+}
+.my-btn:hover{
+background-color: transparent;
+color: #343434;
+  border-color: #343434;
+  
+}
+/*########################## contact###########################  */
+
+
+/*######################### footer########################  */
+footer {
+ background-color: #343434;
+	font-size: 0.8rem;
+}
+
+/* ######################### footer############################# */
